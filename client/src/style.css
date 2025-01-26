@@ -1,0 +1,63 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('./images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Ensures the form doesn't stretch too wide */
+  margin: auto; /* Centers the form on the page */
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;  /* Ensures the input fields take up the full width of the form */
+  max-width: 350px; /* Optional: limit input width for aesthetic */
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="submit"]:focus {
+  outline: none;
+}
